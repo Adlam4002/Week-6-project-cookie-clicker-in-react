@@ -5,7 +5,7 @@ import EPSFunction from "./Components/EPSFunction";
 import Shop from "./Components/Shop";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1000);
   const [EPS, setEPS] = useState(1);
   return (
     <>
@@ -26,7 +26,7 @@ function App() {
       </section>
       <section className="s3">
         <h2>The old Chicken Barn</h2>
-        <Shop />
+        <Shop count={count} setCount={setCount} EPS={EPS} setEPS={setEPS} />
       </section>
     </>
   );
