@@ -12,6 +12,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.bmr {
+  grid-area: 3/2/4/3;
+}
 
 a {
   font-weight: 500;

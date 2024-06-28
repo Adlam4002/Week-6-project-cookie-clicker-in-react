@@ -12,6 +12,7 @@ export default function Shop({ count, setCount, EPS, setEPS }) {
         ? upgrades.map((item) => (
             <ShopItem
               key={item.id}
+              owned={item.owned}
               name={item.name}
               increase={item.increase}
               cost={item.cost}
