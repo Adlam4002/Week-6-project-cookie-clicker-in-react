@@ -12,36 +12,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.bmr {
-  grid-area: 3/2/4/3;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-.Itembox {
-  display: flex;
-  box-sizing: content-box;
-  border-radius: 10px;
-  padding-top: 3px;
-}
-.Item {
-  box-sizing: content-box;
-  border-radius: 10px;
-  padding: 5px;
-  background-color: gray;
-  padding: none;
-}
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -56,7 +26,59 @@ button {
 button:hover {
   border-color: #646cff;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+.bmr {
+  position: fixed;
+  bottom: 5px;
+}
+@media (min-width: 1000px) {
+  .bmr {
+    position: fixed;
+    bottom: 50px;
+    right: 45%;
+  }
+
+  .Itembox {
+    display: flex;
+    box-sizing: content-box;
+    border-radius: 10px;
+    padding-top: 3px;
+  }
+  .Item {
+    box-sizing: content-box;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: gray;
+    padding: none;
+  }
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+
+  .reset-button {
+    font-size: 4rem;
+    background-color: #242424;
+  }
+  .eggbut {
+    border: none;
+    font-size: 15rem;
+    padding: 0px 0px;
+    background-color: #242424;
+    transition-duration: 0.05s;
+  }
+  .eggbut:active {
+    border: none;
+    padding: none;
+    font-size: 14.8rem;
+    text-shadow: rgb(45, 44, 44);
+    transition-duration: 0.05s;
+  }
 }

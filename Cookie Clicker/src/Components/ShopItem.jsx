@@ -19,7 +19,7 @@ export default function ShopItem({
     <>
       <div className="Itembox">
         <h5 className="Item">
-          {name}: increase eggs persecond by {increase}. Cost: {cost} eggs
+          {name}: increase eggs per second by {increase}. Cost: {cost} eggs
           <button onClick={handleBuy}>buy</button>
         </h5>
       </div>

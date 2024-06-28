@@ -31,7 +31,7 @@ function App() {
         />
       </section>
       <section className="s3">
-        <h2>The old Chicken Barn</h2>
+        <h2>The Old Chicken Barn</h2>
         <Shop count={count} setCount={setCount} EPS={EPS} setEPS={setEPS} />
       </section>
 
