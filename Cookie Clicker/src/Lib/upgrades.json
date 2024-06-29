@@ -4,69 +4,79 @@
     "name": "Normal chicken",
     "cost": 100,
     "increase": 1,
-    "owned": 0
+    "owned": 0,
+    "display": 0
   },
   {
     "id": 2,
     "name": "Enhanced Chicken",
     "cost": 500,
     "increase": 5,
-    "owned": 0
+    "owned": 0,
+    "display": 250
   },
   {
     "id": 3,
     "name": "Big chicken",
     "cost": 1000,
     "increase": 10,
-    "owned": 0
+    "owned": 0,
+    "display": 500
   },
   {
     "id": 4,
     "name": "Robot chicken",
     "cost": 2000,
     "increase": 20,
-    "owned": 0
+    "owned": 0,
+    "display": 1000
   },
   {
     "id": 5,
     "name": "Big robot chicken",
     "cost": 5000,
     "increase": 50,
-    "owned": 0
+    "owned": 0,
+    "display": 2500
   },
   {
     "id": 6,
     "name": "Megachicken",
     "cost": 10000,
     "increase": 100,
-    "owned": 0
+    "owned": 0,
+    "display": 5000
   },
   {
     "id": 7,
     "name": "Magical chicken",
     "cost": 20000,
     "increase": 200,
-    "owned": 0
+    "owned": 0,
+    "display": 10000
   },
   {
     "id": 8,
     "name": "Quantum chicken",
     "cost": 50000,
     "increase": 500,
-    "owned": 0
+    "owned": 0,
+    "display": 25000
   },
   {
     "id": 9,
     "name": "Alien chicken",
     "cost": 100000,
     "increase": 1000,
-    "owned": 0
+    "owned": 0,
+    "display": 50000
   },
   {
     "id": 10,
     "name": "Interdimensional-horror chicken",
     "cost": 200000,
     "increase": 2000,
-    "owned": 0
+    "owned": 0,
+    "display": 100000
   }
 ]

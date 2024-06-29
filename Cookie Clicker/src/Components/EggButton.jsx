@@ -1,7 +1,11 @@
-export default function EggButton({ count, setCount, EPS }) {
+export default function EggButton({ count, setCount, EPS, allEgg, setAllEgg }) {
+  function buttonClick() {
+    setCount((prevCount) => prevCount + 1);
+    setAllEgg((prevAllEgg) => prevAllEgg + 1);
+  }
   return (
     <>
-      <button className="eggbut" onClick={() => setCount((count) => count + 1)}>
+      <button className="eggbut" onClick={buttonClick}>
         🥚
       </button>
       <h2>Eggs: {count}</h2>

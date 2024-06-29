@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ShopItem from "./ShopItem";
 import upgrades from "../Lib/upgrades.json";
-export default function Shop({ count, setCount, EPS, setEPS }) {
+export default function Shop({ count, setCount, EPS, setEPS, allEgg }) {
   const [show, setShow] = useState(false);
   return (
     <>
@@ -20,6 +20,8 @@ export default function Shop({ count, setCount, EPS, setEPS }) {
               setCount={setCount}
               EPS={EPS}
               setEPS={setEPS}
+              display={item.display}
+              allEgg={allEgg}
             />
           ))
         : null}

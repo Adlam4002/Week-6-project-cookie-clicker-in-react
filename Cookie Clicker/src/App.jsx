@@ -8,8 +8,12 @@ function App() {
   const [count, setCount] = useState(
     parseInt(localStorage.getItem("Eggs")) || 0
   );
-  const [EPS, setEPS] = useState(parseInt(localStorage.getItem("EPS")) || 1);
+  const [EPS, setEPS] = useState(parseInt(localStorage.getItem("EPS")) || 0);
+  const [allEgg, setAllEgg] = useState(
+    parseInt(localStorage.getItem("All eggs")) || 0
+  );
   useEffect(() => {
+    localStorage.setItem("All eggs", allEgg.toString());
     localStorage.setItem("Eggs", count.toString());
     localStorage.setItem("EPS", EPS.toString());
   }, [count, EPS]);
@@ -22,17 +26,27 @@ function App() {
           setCount={setCount}
           EPS={EPS}
           setEPS={setEPS}
+          allEgg={allEgg}
+          setAllEgg={setAllEgg}
         />
         <EggButton
           count={count}
           setCount={setCount}
           EPS={EPS}
           setEPS={setEPS}
+          allEgg={allEgg}
+          setAllEgg={setAllEgg}
         />
       </section>
       <section className="s3">
         <h2>The Old Chicken Barn</h2>
-        <Shop count={count} setCount={setCount} EPS={EPS} setEPS={setEPS} />
+        <Shop
+          allEgg={allEgg}
+          count={count}
+          setCount={setCount}
+          EPS={EPS}
+          setEPS={setEPS}
+        />
       </section>
 
       <ResetButton
@@ -40,6 +54,8 @@ function App() {
         setCount={setCount}
         EPS={EPS}
         setEPS={setEPS}
+        allEgg={allEgg}
+        setAllEgg={setAllEgg}
       />
     </>
   );

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import upgrades from "../Lib/upgrades.json";
 export default function ShopItem({
   name,
   cost,
@@ -8,6 +9,8 @@ export default function ShopItem({
   setCount,
   EPS,
   setEPS,
+  display,
+  allEgg,
 }) {
   function handleBuy() {
     if (count >= cost) {
@@ -15,12 +18,19 @@ export default function ShopItem({
       setEPS((currentEPS) => currentEPS + increase);
     }
   }
+
   return (
     <>
       <div className="Itembox">
         <h5 className="Item">
-          {name}: increase eggs per second by {increase}. Cost: {cost} eggs
-          <button onClick={handleBuy}>buy</button>
+          {allEgg >= display ? (
+            <>
+              {name}: increase eggs per second by {increase}. Cost: {cost} eggs
+              <button onClick={handleBuy}>buy</button>
+            </>
+          ) : (
+            `You do not yet understand this chicken`
+          )}
         </h5>
       </div>
     </>
