@@ -7,7 +7,9 @@ I will be creating a cookie (egg) clicker style game using React
 ## User Stories
 
 🐿️ As a user, I want to be able to click the cookie and increment the counter
+
 🐿️ As a user, I want to see the counter automatically increment using an interval timer
+
 🐿️ As a user, I want to purchase items i can afford in the shop and increase the number of cookies every time the interval passes
 
 ## Requirements
@@ -23,6 +25,7 @@ I will be creating a cookie (egg) clicker style game using React
 ## Submission
 
 A link to my repository on GitHub: https://github.com/Adlam4002/Week-6-project-cookie-clicker-in-react
+
 A link to my live page on Render: https://week-6-project-cookie-clicker-in-react.onrender.com
 
 # Reflections
@@ -34,6 +37,7 @@ Generally, I found react quite easy and logical to use, compartmentalising all o
 Something that I struggled with for this project was setting up the conditional rendering for the content of the shop items
 return (
 <>
+
 <div className="Itembox">
 {allEgg >= display ? (
 <>
