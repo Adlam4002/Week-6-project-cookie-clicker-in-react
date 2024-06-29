@@ -22,16 +22,18 @@ export default function ShopItem({
   return (
     <>
       <div className="Itembox">
-        <h5 className="Item">
-          {allEgg >= display ? (
-            <>
-              {name}: increase eggs per second by {increase}. Cost: {cost} eggs
+        {allEgg >= display ? (
+          <>
+            <h5 className="Item">
+              {name}: Increase eggs per second by {increase}. Cost: {cost} eggs{" "}
               <button onClick={handleBuy}>buy</button>
-            </>
-          ) : (
-            `You do not yet understand this chicken`
-          )}
-        </h5>
+            </h5>
+          </>
+        ) : (
+          <>
+            <h5 className="pre-item">You do not yet understand this chicken</h5>
+          </>
+        )}
       </div>
     </>
   );

@@ -58,6 +58,14 @@ a:hover {
     background-color: gray;
     padding: none;
   }
+  .pre-item {
+    box-sizing: content-box;
+    border-radius: 10px;
+    padding: 5px;
+    color: rgb(255, 157, 157);
+    background-color: rgb(52, 52, 52);
+    padding: none;
+  }
   h1 {
     font-size: 3.2em;
     line-height: 1.1;
