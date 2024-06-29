@@ -38,6 +38,27 @@ a:hover {
   position: fixed;
   bottom: 5px;
 }
+.Itembox {
+  display: flex;
+  box-sizing: content-box;
+  border-radius: 10px;
+  padding-top: 3px;
+}
+.Item {
+  box-sizing: content-box;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: gray;
+  padding: none;
+}
+.pre-item {
+  box-sizing: content-box;
+  border-radius: 10px;
+  padding: 5px;
+  color: rgb(255, 157, 157);
+  background-color: rgb(52, 52, 52);
+  padding: none;
+}
 @media (min-width: 1000px) {
   .bmr {
     position: fixed;
