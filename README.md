@@ -35,7 +35,8 @@ I created a JSON array of objects to store my shop items. These had an id, name,
 I also decided to save the user's total eggs, current eggs and EPS to local storage every time these values changed. I then utilised the setState function to use the values stored in local storage or (||) 0 if no saved data is present. I also added a button to reset the user’s game. When the button is clicked the user’s current eggs, total eggs and EPS are reset to zero. When the user clicks the button, an alert is triggered, and they can confirm or cancel this effect. I added this so that it’s harder for users to reset their progress by mistake. I also added a favicon to my website, and it was a picture of an egg.
 Generally, I found react quite easy and logical to use, compartmentalising all of the components made keeping track of functions easy. It also helped me to keep track of what tasks I had completed and what was still left to do.
 Something that I struggled with for this project was setting up the conditional rendering for the content of the shop items
-return (
+
+`return (
 <>
 
 <div className="Itembox">
@@ -53,7 +54,7 @@ return (
 )}
 </div>
 </>
-);
+);`
 
 I did not realise that when using JSX elements within a JS section within a JSX file I needed to contain the JSX in <> </> inside the {} signalling I was using JS inside the returned section of the JSX function. I think I figured this out while reading through the react.dev site.
 
