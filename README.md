@@ -36,7 +36,8 @@ I also decided to save the user's total eggs, current eggs and EPS to local stor
 Generally, I found react quite easy and logical to use, compartmentalising all of the components made keeping track of functions easy. It also helped me to keep track of what tasks I had completed and what was still left to do.
 Something that I struggled with for this project was setting up the conditional rendering for the content of the shop items
 
-````return (
+```
+return (
 <>
 
 <div className="Itembox">
@@ -54,7 +55,8 @@ Something that I struggled with for this project was setting up the conditional 
 )}
 </div>
 </>
-);```
+);
+```
 
 I did not realise that when using JSX elements within a JS section within a JSX file I needed to contain the JSX in <> </> inside the {} signalling I was using JS inside the returned section of the JSX function. I think I figured this out while reading through the react.dev site.
 
@@ -65,4 +67,7 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-````
+
+```
+
+```
